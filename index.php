@@ -50,8 +50,7 @@ include_once ("lang/lang.".$CurentLang.".php");
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1"><label></label><? echo $Lang['login_lan']?></label></label>
-                <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <input type="text" name="login" class="form-control" >  
             </div>
             <div class="form-group">
     <label for="exampleInputPassword1"><label><? echo $Lang['pass_lan']?></label></label>
@@ -61,7 +60,7 @@ include_once ("lang/lang.".$CurentLang.".php");
 <?php
 if (isset($_SESSION['msg'])) {
     echo '<div>' . $_SESSION['msg'] . '</div>';
-    unset($_SESSION['msg1']);
+    unset($_SESSION['msg']);
 }
 ?>
 <center>
